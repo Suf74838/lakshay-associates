@@ -41,7 +41,7 @@ var LAKSHAY = {
     years: 7,          // years of industry experience
     clients: 150,      // clients supported
     certifications: 200, // certifications assisted
-    standards: 13      // ISO management standards supported
+    standards: 200,      // ISO management standards supported
   },
 
   /* ---- INTRO ANIMATION -------------------------------------------------
