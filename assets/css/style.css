@@ -1014,4 +1014,55 @@ body {
 * {
   box-sizing: border-box;
 }
+/* Blur ISO service card background images */
+.page-iso .feature-grid .feature {
+  overflow: hidden;
+}
 
+.page-iso .feature-grid .feature > img {
+  filter: blur(5px) brightness(0.65);
+  transform: scale(1.08);
+  transition: filter 0.3s ease, transform 0.4s ease;
+}
+
+/* Keep text/content sharp and above image */
+.page-iso .feature-grid .feature > span,
+.page-iso .feature-grid .feature > b,
+.page-iso .feature-grid .feature > p {
+  position: relative;
+  z-index: 2;
+}
+/* Reduce footer logo size */
+.footer-lockup .brand__mark {
+  width: 35px !important;
+  height: auto !important;
+}
+
+.footer-lockup .brand__word {
+  width: 100px !important;
+  height: auto !important;
+}
+
+.footer-lockup {
+  gap: 10px !important;
+}
+/* Blur background images in featured ISO cards */
+.page-home .feature-grid .feature,
+.page-iso .feature-grid .feature {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-home .feature-grid .feature > img,
+.page-iso .feature-grid .feature > img {
+  filter: blur(6px) brightness(0.55);
+  transform: scale(1.08);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Keep text/content above the blurred image */
+.page-home .feature-grid .feature > *:not(img),
+.page-iso .feature-grid .feature > *:not(img) {
+  position: relative;
+  z-index: 2;
+}
